@@ -1,4 +1,3 @@
-setwd("E:/R/Exploratory Data Analysis")
 Data <- read.table("household_power_consumption.txt",skip=66600,nrow=3000,header=TRUE,sep=";")
 Data <- Data[Data[,1]=="1/2/2007" | Data[,1]=="2/2/2007",]
 x <- paste(Data[,1],Data[,2])
